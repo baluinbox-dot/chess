@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
-const WORKER_URL = "/stockfish/stockfish-nnue-16-single.js#/stockfish/stockfish-nnue-16-single.wasm";
+const B = import.meta.env.BASE_URL;
+const WORKER_URL = `${B}stockfish/stockfish-nnue-16-single.js#${B}stockfish/stockfish-nnue-16-single.wasm`;
 
 export const LEVELS = [
   { name: "Beginner", skill: 0, movetime: 100 },
